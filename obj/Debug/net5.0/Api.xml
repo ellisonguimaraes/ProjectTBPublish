@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="M:Api.Controllers.GitHubController.GetUser(System.String)">
+            <summary> Obtendo informações do Usuário </summary>
+            <param name="user">Usuário</param>
+            <returns>Informações do usuário</returns>
+            <response code="200">OK - Usuário retornado</response>
+            <response code="400">BadRequest - Requisição invalidada</response>
+        </member>
+        <member name="M:Api.Controllers.GitHubController.GetAllRepositories(System.String)">
+            <summary> Obtendo todos os repositórios do usuário </summary>
+            <param name="user">Usuário</param>
+            <returns>Repositórios do usuário</returns>
+            <response code="200">OK - Repositórios retornados</response>
+            <response code="400">BadRequest - Requisição invalidada</response>
+        </member>
+        <member name="M:Api.Controllers.GitHubController.GetFiveOldByLanguageRepositories(System.String,System.String)">
+            <summary> Obtendo os 5 repositórios mais antigos do usuário, com base na linguagem do projeto </summary>
+            <param name="user">Usuário</param>
+            <param name="language">Linguagem do Projeto</param>
+            <returns>Cinco repositórios mais antigos do usuário baseado na linguagem</returns>
+            <response code="200">OK - Repositórios retornados</response>
+            <response code="400">BadRequest - Requisição invalidada</response>
+        </member>
+    </members>
+</doc>
